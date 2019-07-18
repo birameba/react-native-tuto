@@ -2,6 +2,7 @@ import React from 'react'
 import {Text, ActivityIndicator, ListView, FlatList} from 'react-native'
 import axios from 'axios'
 import style from '../Style'
+import Row from './Row'
 
 export default class List extends React.Component
 {
@@ -74,9 +75,10 @@ export default class List extends React.Component
                      <FlatList
                         data={this.state.report}
                         renderItem={({item, index, separators}) => (
-                            <Text>
-                                {item.temp.day}
-                            </Text>
+                            <Row day={item} index1={parseInt(index,10)}/>
+                            // <Text>
+                            //     {item.temp.day}
+                            // </Text>
                           
                           )}
                         />
