@@ -33,7 +33,7 @@ export default class List extends React.Component
 
     const apiKey = 'eea20ef96c66002fdb5067fb537aa6d4'
 
-    const url = `https://samples.openweathermap.org/data/2.5/forecast/daily?id=524901&appid=b1b15e88fa797225412429c1c50c122a1`
+    const url = `https://samples.openweathermap.org/data/2.5/forecast/daily?lat=35&lon=139&cnt=10&appid=b1b15e88fa797225412429c1c50c122a1`
 
     const headers = {}
 
